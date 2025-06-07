@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/fonts.css" rel="stylesheet"> <!-- Restored link to fonts.css -->
+    <link href="./css/fonts.css" rel="stylesheet">
     <style>
-        /* Removed inline @font-face for Nexa Test Light */
-
         body, html {
             margin: 0;
             padding: 0;
@@ -38,13 +36,14 @@
             left: 0;
         }
         .number {
-            font-size: 11px;
-            font-weight: normal;
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 25pt;
             color: #fff;
             text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
         }
         .slogan {
-            font-size: 10px;
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 25pt;
             text-align: center;
             color: #fff;
             text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
@@ -53,15 +52,15 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            padding-right: 5px;
+            padding-right: 10px;
         }
 
         /* Toggle Switch Styles */
         .switch {
             position: relative;
             display: inline-block;
-            width: 40px;
-            height: 20px;
+            width: 50px;
+            height: 24px;
             margin-left: 8px;
         }
         .switch input {
@@ -84,10 +83,10 @@
         .slider:before {
             position: absolute;
             content: "";
-            height: 16px;
-            width: 16px;
-            left: 2px;
-            bottom: 2px;
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
             background-color: white;
             transition: .4s;
             border-radius: 50%;
@@ -100,11 +99,13 @@
             box-shadow: 0 0 1px #2196F3;
         }
         input:checked + .slider:before {
-            transform: translateX(20px);
+            transform: translateX(26px);
         }
         .dark-mode-label {
-            font-size: 12px;
+            font-size: 14px;
             margin-right: 5px;
+            display: flex;
+            align-items: center;
         }
         body.dark-mode {
             background-color: #121212;
@@ -119,20 +120,21 @@
         }
         body.dark-mode .dark-mode-label::before {
             content: "🌙";
+            margin-right: 4px;
         }
-
         .dark-mode-label::before {
             content: "☀️";
-            font-size: 14px;
+            font-size: 16px;
+            margin-right: 4px;
         }
 
         /* Navigation Bar Styles */
         .navbar {
             position: fixed;
-            top: 30px; /* Position below the header */
+            top: 60px; /* Increased from 30px to prevent clipping with header */
             left: 0;
             width: 100%;
-            padding: 10px 0;
+            padding: 15px 0; /* Increased padding for more space */
             background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
             z-index: 999;
             display: flex;
@@ -147,19 +149,26 @@
         }
 
         .navbar-logo {
-            height: 40px;
+            height: 50px; /* Increased logo size */
             margin-right: 15px;
         }
 
         .navbar-brand-text {
-            font-size: 18px;
-            font-weight: 600;
-            color: #333;
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 25pt;
+            color: #fff;
             margin: 0;
-            background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
             padding-left: 5px;
+            line-height: 1.1; /* Added for better line spacing */
+        }
+
+        .navbar-brand-text span {
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 14pt !important;
+            font-weight: 400;
+            display: block;
+            margin-top: -5px;
         }
 
         .navbar-links {
@@ -168,17 +177,19 @@
         }
 
         .navbar-links a {
-            color: #333;
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 25pt;
+            color: #fff;
             text-decoration: none;
-            margin-left: 20px;
-            font-size: 14px;
-            font-weight: 500;
+            margin-left: 30px;
             position: relative;
             transition: color 0.3s;
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
         }
 
         .navbar-links a:hover {
-            color: #000;
+            color: #fff;
+            opacity: 0.8;
         }
 
         .navbar-links a::after {
@@ -293,6 +304,114 @@
         .cta-button:hover {
             background-color: rgba(213, 164, 57, 0.2);
         }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .number {
+                font-size: 20pt;
+            }
+            .slogan {
+                font-size: 20pt;
+            }
+            .navbar-links a {
+                font-size: 20pt;
+                margin-left: 20px;
+            }
+            .navbar-brand-text {
+                font-size: 20pt;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header {
+                padding: 2px 5px;
+            }
+            .number {
+                font-size: 16pt;
+            }
+            .slogan {
+                font-size: 16pt;
+            }
+            .navbar-links a {
+                font-size: 16pt;
+                margin-left: 15px;
+            }
+            .navbar-brand-text {
+                font-size: 16pt;
+            }
+            .navbar-brand-text span {
+                font-size: 10pt !important;
+            }
+            .navbar-logo {
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                grid-template-columns: 1fr 1fr;
+            }
+            .number {
+                font-size: 14pt;
+            }
+            .slogan {
+                display: none; /* Hide slogan on small screens */
+            }
+            .navbar {
+                flex-direction: column;
+                top: 45px;
+                padding: 5px 0;
+            }
+            .navbar-links {
+                margin-right: 0;
+                margin-top: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .navbar-links a {
+                font-size: 14pt;
+                margin: 5px 10px;
+            }
+            .navbar-logo-container {
+                margin: 0 auto;
+            }
+            .dark-mode-toggle {
+                padding-right: 5px;
+            }
+            .content-section {
+                padding-top: 120px; /* Adjust for stacked navbar */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .number {
+                font-size: 12pt;
+            }
+            .navbar-links a {
+                font-size: 12pt;
+                margin: 3px 6px;
+            }
+            .navbar-brand-text {
+                font-size: 14pt;
+            }
+            .navbar-brand-text span {
+                font-size: 8pt !important;
+            }
+            .navbar-logo {
+                height: 30px;
+            }
+            .switch {
+                width: 40px;
+                height: 20px;
+            }
+            .slider:before {
+                height: 14px;
+                width: 14px;
+            }
+            input:checked + .slider:before {
+                transform: translateX(20px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -310,7 +429,7 @@
             <div class="container">
                 <header class="header">
                     <div class="number">+961 3 542 530</div>
-                    <div class="slogan">From Martine Icons Atelier...to Your Home</div>
+                    <div class="slogan">🇱🇧 From Martine Icons Atelier... to Your Home</div>
                     <div class="dark-mode-toggle d-flex align-items-center">
                         <span class="dark-mode-label"></span>
                         <label class="switch">
