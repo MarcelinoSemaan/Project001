@@ -35,12 +35,14 @@
             top: 0;
             left: 0;
         }
+
         .number {
             font-family: 'Nexa Bold', sans-serif;
             font-size: 25pt;
             color: #fff;
             text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
         }
+
         .slogan {
             font-family: 'Nexa Bold', sans-serif;
             font-size: 25pt;
@@ -69,7 +71,7 @@
         .flag-circle::after {
             content: "🇱🇧";
             position: absolute;
-            top:60%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%) scale(1.9); /* Scale up the emoji to fill more space */
             font-size: 22px; /* Base font size */
@@ -91,11 +93,13 @@
             height: 24px;
             margin-left: 8px;
         }
+
         .switch input {
             opacity: 0;
             width: 0;
             height: 0;
         }
+
         .slider {
             position: absolute;
             cursor: pointer;
@@ -106,8 +110,9 @@
             background-color: #ccc;
             transition: .4s;
             border-radius: 34px;
-            box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
         }
+
         .slider:before {
             position: absolute;
             content: "";
@@ -118,38 +123,47 @@
             background-color: white;
             transition: .4s;
             border-radius: 50%;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
+
         input:checked + .slider {
             background-color: #2196F3;
         }
+
         input:focus + .slider {
             box-shadow: 0 0 1px #2196F3;
         }
+
         input:checked + .slider:before {
             transform: translateX(26px);
         }
+
         .dark-mode-label {
             font-size: 14px;
             margin-right: 5px;
             display: flex;
             align-items: center;
         }
+
         body.dark-mode {
             background-color: #121212;
             color: #ffffff;
         }
+
         body.dark-mode .slider {
             background-color: #555;
         }
+
         body.dark-mode .content-section {
             background-color: #121212;
             color: #f8f9fa;
         }
+
         body.dark-mode .dark-mode-label::before {
             content: "🌙";
             margin-right: 4px;
         }
+
         .dark-mode-label::before {
             content: "☀️";
             font-size: 16px;
@@ -163,7 +177,7 @@
             left: 0;
             width: 100%;
             padding: 15px 0; /* Increased padding for more space */
-            background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
             z-index: 1001;
             display: flex;
             justify-content: space-between;
@@ -228,7 +242,7 @@
             height: 2px;
             bottom: -4px;
             left: 0;
-            background-color: #000;
+            background-color: #d5a439; /* Yellow underline */
             transition: width 0.3s;
         }
 
@@ -272,10 +286,11 @@
             transform: translate(-50%, 0);
             z-index: 1000; /* Fixed behind header/nav */
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             overflow: visible;
-            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .yellow-rectangle::before {
@@ -289,8 +304,43 @@
             background-size: cover;
             background-position: center;
             opacity: 0.2;
-            z-index: -1;
+            /* removed z-index so it sits above background, below text */
         }
+
+        /* Yellow rectangle text styles */
+        .yellow-rectangle .title {
+            text-align: center;
+            line-height: 1;
+        }
+
+        .yellow-rectangle .lebanese {
+            font-family: 'Aesthetik Script', cursive;
+            font-size: 50pt;
+            color: #ffffff;
+        }
+
+        .yellow-rectangle .artist {
+            font-family: 'Nexa Extra Light', sans-serif;
+            font-size: 50pt;
+            color: #ffffff;
+        }
+
+        .yellow-rectangle .iconographer {
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 50pt;
+            color: #ffffff;
+        }
+
+        .yellow-rectangle .yellow-body {
+            font-family: 'Nexa Bold', sans-serif;
+            font-size: 25pt;
+            color: #39352a;
+            text-align: center;
+            margin-top: 0.2rem;
+            margin-bottom: 0;
+            line-height: 1.1;
+        }
+
 
         .hero-section {
             position: relative;
@@ -389,13 +439,16 @@
             .number {
                 font-size: 20pt;
             }
+
             .slogan {
                 font-size: 20pt;
             }
+
             .navbar-links a {
                 font-size: 20pt;
                 margin-left: 20px;
             }
+
             .navbar-brand-text {
                 font-size: 20pt;
             }
@@ -405,22 +458,28 @@
             .header {
                 padding: 2px 5px;
             }
+
             .number {
                 font-size: 16pt;
             }
+
             .slogan {
                 font-size: 16pt;
             }
+
             .navbar-links a {
                 font-size: 16pt;
                 margin-left: 15px;
             }
+
             .navbar-brand-text {
                 font-size: 16pt;
             }
+
             .navbar-brand-text span {
                 font-size: 10pt !important;
             }
+
             .navbar-logo {
                 height: 40px;
             }
@@ -430,33 +489,41 @@
             .header {
                 grid-template-columns: 1fr 1fr;
             }
+
             .number {
                 font-size: 14pt;
             }
+
             .slogan {
                 display: none; /* Hide slogan on small screens */
             }
+
             .navbar {
                 flex-direction: column;
                 top: 45px;
                 padding: 5px 0;
             }
+
             .navbar-links {
                 margin-right: 0;
                 margin-top: 10px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
+
             .navbar-links a {
                 font-size: 14pt;
                 margin: 5px 10px;
             }
+
             .navbar-logo-container {
                 margin: 0 auto;
             }
+
             .dark-mode-toggle {
                 padding-right: 5px;
             }
+
             .content-section {
                 padding-top: 120px; /* Adjust for stacked navbar */
             }
@@ -466,27 +533,34 @@
             .number {
                 font-size: 12pt;
             }
+
             .navbar-links a {
                 font-size: 12pt;
                 margin: 3px 6px;
             }
+
             .navbar-brand-text {
                 font-size: 14pt;
             }
+
             .navbar-brand-text span {
                 font-size: 8pt !important;
             }
+
             .navbar-logo {
                 height: 30px;
             }
+
             .switch {
                 width: 40px;
                 height: 20px;
             }
+
             .slider:before {
                 height: 14px;
                 width: 14px;
             }
+
             input:checked + .slider:before {
                 transform: translateX(20px);
             }
@@ -494,80 +568,84 @@
     </style>
 </head>
 <body>
-    <!-- Yellow rectangle overlay moved outside of any sections to be on top -->
-    <div class="yellow-rectangle">
-        <!-- Optional content inside the rectangle -->
+<!-- Yellow rectangle overlay moved outside of any sections to be on top -->
+<div class="yellow-rectangle">
+    <div class="title">
+        <span class="lebanese">Lebanese </span> <span class="artist">artist and </span> <span class="iconographer">Iconographer</span>
     </div>
+    <p class="yellow-body" style="margin-top:0.2rem; margin-bottom:0;">Lorem ipsum dolor sit amet,<br>consectetur
+        adipiscing elit.</p>
+</div>
 
-    <!-- Header and Navigation moved here to stay above content -->
+<!-- Header and Navigation moved here to stay above content -->
+<div class="container">
+    <header class="header">
+        <div class="number">+961 3 542 530</div>
+        <div class="slogan"><span class="flag-circle">🇱🇧</span> From Martine Icons Atelier... to Your Home</div>
+        <div class="dark-mode-toggle d-flex align-items-center">
+            <span class="dark-mode-label"></span>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="navbar-logo-container">
+            <img src="./images/cross_logo.png" alt="Logo" class="navbar-logo">
+            <span class="navbar-brand-text">Martine Boutros<br><span style="font-size:12px; font-weight:400;">Graphic Design &amp; Iconography</span></span>
+        </div>
+        <div class="navbar-links">
+            <a href="about.html">About Us</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Blogs</a>
+            <a href="#">Testimonials</a>
+        </div>
+    </nav>
+</div>
+
+<section class="hero-section">
+    <img src="./images/header.png" alt="Header Background" class="hero-image">
+
+    <!-- Hero Text - Three-part sentence -->
+    <div class="hero-text">
+        <div class="hero-text-line1">SACRED ART,</div>
+        <div class="hero-text-line2">HANDCRAFTED IN</div>
+        <div class="hero-text-line3">Devotion</div>
+        <a href="#" class="shop-now-button">SHOP NOW</a>
+    </div>
+</section>
+
+<div class="content-section">
     <div class="container">
-        <header class="header">
-            <div class="number">+961 3 542 530</div>
-            <div class="slogan"><span class="flag-circle">🇱🇧</span> From Martine Icons Atelier... to Your Home</div>
-            <div class="dark-mode-toggle d-flex align-items-center">
-                <span class="dark-mode-label"></span>
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </header>
-        <nav class="navbar">
-            <div class="navbar-logo-container">
-                <img src="./images/cross_logo.png" alt="Logo" class="navbar-logo">
-                <span class="navbar-brand-text">Martine Boutros<br><span style="font-size:12px; font-weight:400;">Graphic Design &amp; Iconography</span></span>
-            </div>
-            <div class="navbar-links">
-                <a href="about.html">About Us</a>
-                <a href="#">Shop</a>
-                <a href="#">Contact</a>
-                <a href="#">Blogs</a>
-                <a href="#">Testimonials</a>
-            </div>
-        </nav>
+        <!-- Main content will go here -->
+        <h2>About Us</h2>
+        <p>Content goes here...</p>
     </div>
+</div>
 
-    <section class="hero-section">
-        <img src="./images/header.png" alt="Header Background" class="hero-image">
+<script src="./js/bootstrap.min.js"></script>
+<script>
+    // Check for saved dark mode preference
+    const darkModeToggle = document.getElementById('darkModeToggle');
 
-        <!-- Hero Text - Three-part sentence -->
-        <div class="hero-text">
-            <div class="hero-text-line1">SACRED ART,</div>
-            <div class="hero-text-line2">HANDCRAFTED IN</div>
-            <div class="hero-text-line3">Devotion</div>
-            <a href="#" class="shop-now-button">SHOP NOW</a>
-        </div>
-    </section>
+    // Load preference from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
 
-    <div class="content-section">
-        <div class="container">
-            <!-- Main content will go here -->
-            <h2>About Us</h2>
-            <p>Content goes here...</p>
-        </div>
-    </div>
-
-    <script src="./js/bootstrap.min.js"></script>
-    <script>
-        // Check for saved dark mode preference
-        const darkModeToggle = document.getElementById('darkModeToggle');
-
-        // Load preference from localStorage
-        if (localStorage.getItem('darkMode') === 'enabled') {
+    // Listen for toggle changes
+    darkModeToggle.addEventListener('change', function () {
+        if (this.checked) {
             document.body.classList.add('dark-mode');
-            darkModeToggle.checked = true;
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', null);
         }
-
-        // Listen for toggle changes
-        darkModeToggle.addEventListener('change', function() {
-            if (this.checked) {
-                document.body.classList.add('dark-mode');
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                document.body.classList.remove('dark-mode');
-                localStorage.setItem('darkMode', null);
-            }
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
