@@ -30,7 +30,7 @@
             backdrop-filter: none; /* Removed blur effect */
             margin-bottom: 0;
             position: fixed;
-            z-index: 1000;
+            z-index: 1002;
             width: 100%;
             top: 0;
             left: 0;
@@ -164,7 +164,7 @@
             width: 100%;
             padding: 15px 0; /* Increased padding for more space */
             background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
-            z-index: 999;
+            z-index: 1001;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -241,7 +241,7 @@
             padding-top: 80px;
             height: 100vh;
             position: relative;
-            background-color: #000; /* Fallback color */
+            background-color: #ffffff; /* Fallback color */
             max-height: 1080px;
             overflow: hidden;
         }
@@ -270,7 +270,7 @@
             left: 50%;
             bottom: -100px;
             transform: translate(-50%, 0);
-            z-index: 1001; /* Keeping high z-index */
+            z-index: 1000; /* Fixed behind header/nav */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -292,10 +292,16 @@
             z-index: -1;
         }
 
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            max-height: 1080px;
+            overflow: hidden;
+        }
+
         .hero-content {
             position: relative;
-            z-index: 3; /* Increased z-index to appear above yellow rectangle */
-            height: 100%;
+            z-index: 3;
             width: 100%;
             max-width: 1920px;
             margin: 0 auto;
@@ -493,6 +499,34 @@
         <!-- Optional content inside the rectangle -->
     </div>
 
+    <!-- Header and Navigation moved here to stay above content -->
+    <div class="container">
+        <header class="header">
+            <div class="number">+961 3 542 530</div>
+            <div class="slogan"><span class="flag-circle">🇱🇧</span> From Martine Icons Atelier... to Your Home</div>
+            <div class="dark-mode-toggle d-flex align-items-center">
+                <span class="dark-mode-label"></span>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div class="navbar-logo-container">
+                <img src="./images/cross_logo.png" alt="Logo" class="navbar-logo">
+                <span class="navbar-brand-text">Martine Boutros<br><span style="font-size:12px; font-weight:400;">Graphic Design &amp; Iconography</span></span>
+            </div>
+            <div class="navbar-links">
+                <a href="about.html">About Us</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+                <a href="#">Blogs</a>
+                <a href="#">Testimonials</a>
+            </div>
+        </nav>
+    </div>
+
     <section class="hero-section">
         <img src="./images/header.png" alt="Header Background" class="hero-image">
 
@@ -502,37 +536,6 @@
             <div class="hero-text-line2">HANDCRAFTED IN</div>
             <div class="hero-text-line3">Devotion</div>
             <a href="#" class="shop-now-button">SHOP NOW</a>
-        </div>
-
-        <div class="hero-content">
-            <div class="container">
-                <header class="header">
-                    <div class="number">+961 3 542 530</div>
-                    <div class="slogan"><span class="flag-circle">🇱🇧</span> From Martine Icons Atelier... to Your Home</div>
-                    <div class="dark-mode-toggle d-flex align-items-center">
-                        <span class="dark-mode-label"></span>
-                        <label class="switch">
-                            <input type="checkbox" id="darkModeToggle">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </header>
-
-                <!-- Navigation Bar -->
-                <nav class="navbar">
-                    <div class="navbar-logo-container">
-                        <img src="./images/cross_logo.png" alt="Logo" class="navbar-logo">
-                        <span class="navbar-brand-text">Martine Boutros<br><span style="font-size:12px; font-weight:400;">Graphic Design &amp; Iconography</span></span>
-                    </div>
-                    <div class="navbar-links">
-                        <a href="about.html">About Us</a>
-                        <a href="#">Shop</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Blogs</a>
-                        <a href="#">Testimonials</a>
-                    </div>
-                </nav>
-            </div>
         </div>
     </section>
 
