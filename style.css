@@ -448,7 +448,7 @@ body.dark-mode .dark-mode-label::before {
 /* About Us section */
 .about-container {
     width: 100%;
-    height: 40vh; /* 0.4 of hero section */
+    height: 41vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,140 +471,67 @@ body.dark-mode .dark-mode-label::before {
     width: 805px;
     height: 202px;
     transform: translate(-50%, -50%);
-    background: url("./images/cross_logo.png") no-repeat center center;
+    background: url("./images/cross_logo.svg") no-repeat center center;
     background-size: contain;
     opacity: 0.4;
     z-index: 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .number {
-        font-size: 20pt;
+/* New Red Container Section */
+.red-container {
+    width: 100%;
+    height: 46vh; /* 0.46 of hero image height */
+    background-color: #ae421c;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 40px 0 80px; /* more left padding to nudge content right */
+    gap: 60px;
+    align-items: center;
+}
+.red-container img {
+    width: auto;
+    height: 64vh;
+    align-self: flex-end;
+}
+.red-container .red-text {
+    width: auto;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;  /* center the paragraph */
+    font-family: 'Nexa Extra Light', sans-serif;
+}
+.red-text-wrapper {
+    display: flex;
+    flex-direction: column;
     }
-
-    .slogan {
-        font-size: 20pt;
-    }
-
-    .navbar-links a {
-        font-size: 20pt;
-        margin-left: 20px;
-    }
-
-    .navbar-brand-text {
-        font-size: 20pt;
-    }
+.red-text-wrapper .red-title {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 25pt;
+    color: #ffffff;
 }
 
-@media (max-width: 992px) {
-    .header {
-        padding: 2px 5px;
-    }
-
-    .number {
-        font-size: 16pt;
-    }
-
-    .slogan {
-        font-size: 16pt;
-    }
-
-    .navbar-links a {
-        font-size: 16pt;
-        margin-left: 15px;
-    }
-
-    .navbar-brand-text {
-        font-size: 16pt;
-    }
-
-    .navbar-brand-text span {
-        font-size: 10pt !important;
-    }
-
-    .navbar-logo {
-        height: 40px;
-    }
+/* Main Logo - Independent from navbar */
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 30px;
+    position: relative;
+    z-index: 1010;
 }
 
-@media (max-width: 768px) {
-    .header {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .number {
-        font-size: 14pt;
-    }
-
-    .slogan {
-        display: none; /* Hide slogan on small screens */
-    }
-
-    .navbar {
-        flex-direction: column;
-        top: 45px;
-        padding: 5px 0;
-    }
-
-    .navbar-links {
-        margin-right: 0;
-        margin-top: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar-links a {
-        font-size: 14pt;
-        margin: 5px 10px;
-    }
-
-    .navbar-logo-container {
-        margin: 0 auto;
-    }
-
-    .dark-mode-toggle {
-        padding-right: 5px;
-    }
-
-    .content-section {
-        padding-top: 120px; /* Adjust for stacked navbar */
-    }
+.main-logo {
+    height: 100px; /* Increased size from 50px */
+    width: auto;
+    margin-right: 15px;
 }
 
-@media (max-width: 576px) {
-    .number {
-        font-size: 12pt;
-    }
-
-    .navbar-links a {
-        font-size: 12pt;
-        margin: 3px 6px;
-    }
-
-    .navbar-brand-text {
-        font-size: 14pt;
-    }
-
-    .navbar-brand-text span {
-        font-size: 8pt !important;
-    }
-
-    .navbar-logo {
-        height: 30px;
-    }
-
-    .switch {
-        width: 40px;
-        height: 20px;
-    }
-
-    .slider:before {
-        height: 14px;
-        width: 14px;
-    }
-
-    input:checked + .slider:before {
-        transform: translateX(20px);
-    }
+.main-brand-text {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 36pt; /* Increased from 25pt */
+    color: #d5a439;
+    margin: 0;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    line-height: 1.1;
 }
