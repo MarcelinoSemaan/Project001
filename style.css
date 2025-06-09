@@ -454,7 +454,7 @@ body.dark-mode .dark-mode-label::before {
     justify-content: center;
     position: relative;
 }
-.about-heading {
+h2 {
     position: relative;
     font-family: 'Aesthetik Script', cursive;
     font-size: 10vh;
@@ -463,7 +463,7 @@ body.dark-mode .dark-mode-label::before {
     z-index: 1;
 }
 /* in `style.css` */
-.about-heading::before {
+h2::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -498,7 +498,7 @@ body.dark-mode .dark-mode-label::before {
     width: auto;
     margin: 0;
     color: #ffffff;
-    text-align: center;  /* center the paragraph */
+    text-align: justify;  /* center the paragraph */
     font-family: 'Nexa Extra Light', sans-serif;
 }
 .red-text-wrapper {
@@ -509,29 +509,7 @@ body.dark-mode .dark-mode-label::before {
     font-family: 'Nexa Bold', sans-serif;
     font-size: 25pt;
     color: #ffffff;
-}
-
-/* Main Logo - Independent from navbar */
-.main-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px auto 30px;
-    position: relative;
-    z-index: 1010;
-}
-
-.main-logo {
-    height: 100px; /* Increased size from 50px */
-    width: auto;
-    margin-right: 15px;
-}
-
-.main-brand-text {
-    font-family: 'Nexa Bold', sans-serif;
-    font-size: 36pt; /* Increased from 25pt */
-    color: #d5a439;
     margin: 0;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
-    line-height: 1.1;
 }
+
+shop-container
