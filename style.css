@@ -63,36 +63,30 @@ body, html {
 .slogan {
     font-family: 'Nexa Bold', sans-serif;
     font-size: 25pt;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    line-height: 1;
+    gap: 0.3em;
 }
 
 /* Flag emoji in circle style */
 .flag-circle {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px; /* Slightly reduced from 36px */
-    height: 32px; /* Slightly reduced from 36px */
-    border-radius: 50%;
-    background-color: white;
-    margin-right: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Keep overflow hidden to maintain the circular shape */
+    width: 1em;
+    height: 1em;
     vertical-align: middle;
-    padding: 0;
-    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0;
 }
-
-.flag-circle::after {
-    content: "🇱🇧";
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.9); /* Scale up the emoji to fill more space */
-    font-size: 22px; /* Base font size */
-    line-height: 0; /* Eliminate line height spacing */
+.flag-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .dark-mode-toggle {
@@ -449,6 +443,38 @@ body.dark-mode .dark-mode-label::before {
     text-shadow: none;
     display: inline-block;
     letter-spacing: 0.5px;
+}
+
+/* About Us section */
+.about-container {
+    width: 100%;
+    height: 40vh; /* 0.4 of hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about-heading {
+    position: relative;
+    font-family: 'Aesthetik Script', cursive;
+    font-size: 10vh;
+    color: #ae421c;
+    margin: 0;
+    z-index: 1;
+}
+/* in `style.css` */
+.about-heading::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 805px;
+    height: 202px;
+    transform: translate(-50%, -50%);
+    background: url("./images/cross_logo.png") no-repeat center center;
+    background-size: contain;
+    opacity: 0.4;
+    z-index: 0;
 }
 
 /* Responsive Styles */
