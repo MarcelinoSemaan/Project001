@@ -261,10 +261,9 @@ body.dark-mode .dark-mode-label::before {
     width: 100%;
 }
 
-/* Add padding to content section to prevent overlap with fixed navbar */
 .content-section {
     padding-top: 80px;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     background-color: #ffffff; /* Fallback color */
     max-height: 1080px;
@@ -442,7 +441,7 @@ body.dark-mode .dark-mode-label::before {
     text-decoration: none;
     text-shadow: none;
     display: inline-block;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 /* About Us section */
@@ -471,9 +470,9 @@ h2::before {
     width: 805px;
     height: 202px;
     transform: translate(-50%, -50%);
-    background: url("./images/cross_logo.svg") no-repeat center center;
-    background-size: contain;
-    opacity: 0.4;
+    background: url("./images/CROSS.svg") no-repeat center center;
+    background-size: auto;
+    opacity: 0.2;
     z-index: 0;
 }
 
@@ -511,5 +510,14 @@ h2::before {
     color: #ffffff;
     margin: 0;
 }
+.shop-container
+{
+    min-height: 150px;
+}
 
-shop-container
+.centered-paragraph {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #39352a;
+}
