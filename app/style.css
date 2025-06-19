@@ -305,7 +305,7 @@ body.dark-mode .dark-mode-label::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: visible;
+    overflow: hidden; /* Changed from visible to hidden to clip corners */
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 30px; /* Added border-radius for squircle effect */
 }
@@ -321,6 +321,7 @@ body.dark-mode .dark-mode-label::before {
     background-size: cover;
     background-position: center;
     opacity: 0.2;
+    border-radius: inherit; /* Ensure pseudo-element follows the container's border radius */
     /* removed z-index so it sits above background, below text */
 }
 
