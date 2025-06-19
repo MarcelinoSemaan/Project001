@@ -1,0 +1,89 @@
+.banner-text a {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 18pt;
+    color: #d5a439;
+    background-color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    text-decoration: none;
+    text-shadow: none;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.header-box {
+    width: 70%;
+    min-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.header-box h1 {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 2.5rem;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.header-box div {
+    text-align: center;
+    line-height: 1;
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.header-box .lebanese {
+    font-family: 'Aesthetik Script', cursive;
+}
+
+.header-box .artist {
+    font-family: 'Nexa Extra Light', sans-serif;
+}
+
+.header-box .iconographer {
+    font-family: 'Nexa Bold', sans-serif;
+}
+
+.banner-text {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 100px;
+    color: white;
+}
+
+
+.banner-text div:nth-of-type(1) {
+    font-family: 'Nexa Extra Light', sans-serif;
+    font-size: 5vw;
+}
+
+.banner-text div:nth-of-type(2) {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.banner-text div:nth-of-type(3) {
+    font-family: 'Aesthetik Script', cursive;
+    font-size: 8vw;
+    color: var(--yellow);
+}

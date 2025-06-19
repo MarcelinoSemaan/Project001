@@ -1,142 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link href="style.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
 
 </head>
+
 <body>
-<!-- Header and Navigation moved here to stay above content -->
-<div class="container">
-    <header class="header">
-        <div class="number">+961 3 542 530</div>
-        <div class="slogan">
-      <span class="flag-circle">
-        <img src="./images/lebanese-flag.svg" alt="Lebanese Flag">
-      </span>
-            From Martine Icons Atelier… to Your Home
-        </div>
-        <div class="dark-mode-toggle d-flex align-items-center">
-            <span class="dark-mode-label"></span>
-            <label class="switch">
-                <input type="checkbox" id="darkModeToggle">
+    <section id="banner">
+        <header>
+            <a class="number">+961 3 542 530</a>
+            <div class="slogan">
+                <img src="./images/lebanese-flag.svg" alt="Lebanese Flag">
+                From Martine Icons Atelier… to Your Home
+            </div>
+            <label>
+                <input style="display: none;" type="checkbox">
                 <span class="slider"></span>
             </label>
-        </div>
-    </header>
-    <nav class="navbar">
-        <div class="navbar-logo-container">
-            <img src="./images/cross_logo.svg" alt="Logo" class="navbar-logo">
-            <span class="navbar-brand-text">Martine Boutros<br><span style="font-size:12px; font-weight:400;">Graphic Design &amp; Iconography</span></span>
-        </div>
-        <div class="navbar-links">
-            <a href="index.html">About Us</a>
+        </header>
+        <nav class="navbar">
+            <a href="/" class="navbar-logo-container">
+                <img src="./images/cross_logo.svg" alt="Logo" class="navbar-logo">
+                <!--span class="navbar-brand-text">Martine Boutros<br><span
+                        style="font-size:12px; font-weight:400;">Graphic Design &amp; Iconography</span></span-->
+            </a>
+            <a href="/">About Us</a>
             <a href="#">Shop</a>
             <a href="#">Contact</a>
             <a href="#">Blogs</a>
             <a href="#">Testimonials</a>
+
+        </nav>
+        <div class="banner-text">
+            <div>SACRED ART,</div>
+            <div>HANDCRAFTED IN</div>
+            <div>Devotion</div>
+            <a href="#">SHOP NOW</a>
         </div>
-    </nav>
-</div>
-
-<section class="hero-section">
-    <img src="./images/header.png" alt="Header Background" class="hero-image">
-
-    <!-- Hero Text - Three-part sentence -->
-    <div class="hero-text">
-        <div class="hero-text-line1">SACRED ART,</div>
-        <div class="hero-text-line2">HANDCRAFTED IN</div>
-        <div class="hero-text-line3">Devotion</div>
-        <a href="#" class="shop-now-button">SHOP NOW</a>
-    </div>
-</section>
-
-<div class="yellow-rectangle">
-    <div class="title">
-        <span class="lebanese">Lebanese </span> <span class="artist">artist and </span> <span class="iconographer">Iconographer</span>
-    </div>
-    <p class="yellow-body" style="margin-top:0.2rem; margin-bottom:0;">Lorem ipsum dolor sit amet,<br>consectetur
-        adipiscing elit.</p>
-</div>
-
-<div class="content-section">
-    <div class="container">
-        <!-- Main content will go here -->
-        <div class="about-container">
-            <h2>About Us</h2>
+        <div class="header-box">
+            <div><span class="lebanese">Lebanese </span> <span class="artist">artist and </span> <span
+                    class="iconographer">Iconographer</span></div>
+            Creating sacred icons rooted with tradition, guided by faith and shaped through the hand of an artist!
         </div>
-        <div class="red-container">
-            <img src="./images/body1.png" alt="Sample Image">
-            <div class="red-text-wrapper">
-                <div class="red-title">MARTINE BOUTROS</div>
-                <p class="red-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                    libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                    libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                    libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                    libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                    libero. Sed cursus ante dapibus diam.</p>
-            </div>
-        </div>
-        <div class="shop-container">
-            <h2 style="text-align: center;padding: 70px">Shop</h2>
-        </div>
-    </div>
-</div>
-<br>
-<p class="centered-paragraph">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit. Esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<div class="blue-box">
-  <div class="circle-list">
-    <div class="circle-item">
-      <div class="circle"><img src="./images/jesus.jpg" alt="Image 1"></div>
-      <span>Caption 1</span>
-    </div>
-    <div class="circle-item">
-      <div class="circle"><img src="./images/jesus.jpg" alt="Image 2"></div>
-      <span>Caption 2</span>
-    </div>
-    <div class="circle-item">
-      <div class="circle"><img src="./images/jesus.jpg" alt="Image 3"></div>
-      <span>Caption 3</span>
-    </div>
-    <div class="circle-item">
-      <div class="circle"><img src="./images/jesus.jpg" alt="Image 4"></div>
-      <span>Caption 4</span>
-    </div>
-    <div class="circle-item">
-      <div class="circle"><img src="./images/jesus.jpg" alt="Image 5"></div>
-      <span>Caption 5</span>
-    </div>
-  </div>
-</div>
-<div class="white-space"></div>
-<script>
-    // Check for saved dark mode preference
-    const darkModeToggle = document.getElementById('darkModeToggle');
+    </section>
 
-    // Load preference from localStorage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        darkModeToggle.checked = true;
-    }
-
-    // Listen for toggle changes
-    darkModeToggle.addEventListener('change', function () {
-        if (this.checked) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', null);
-        }
-    });
-</script>
-</body>
-</html>
+    <h4>About Us</h4>

@@ -1,0 +1,111 @@
+
+header label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #93929285;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    transition: 0.4s;
+    border-radius: 50%;
+    background-image: url('https://img.freepik.com/free-vector/yellow-crescent-geometric-shape-vector_53876-164618.jpg');
+    background-size: contain;
+    background-position: center;
+
+}
+
+header input:checked+.slider {
+    background-color: #33333385;
+
+}
+
+header input:checked+.slider::before {
+    transform: translateX(26px);
+    background-image: url('https://media.istockphoto.com/id/1124567572/vector/cute-flat-sun-icon.jpg?s=612x612&w=0&k=20&c=_ekkRvw-dX-3Dt-jH3tG8wonvYJ1NrBHEAEDFm4cGVc=');
+}
+
+section {
+    height: 100vh;
+}
+
+#banner {
+    background-image: url(images/header.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 90px;
+    font-family: 'Aesthetik Script', cursive;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    max-width: 1400px;
+    font-family: 'Nexa Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+}
+
+header img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 65px;
+    margin: 40px 0px;
+    padding: 0 35px;
+    gap: 25px;
+    background: linear-gradient(to right, rgb(0 0 0 / 0%), rgb(255 255 255));
+}
+
+nav img {
+    width: 140px;
+    height: 140px;
+}
+
+nav a:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.navbar a {
+    font-family: 'Nexa Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
